@@ -17,7 +17,7 @@ http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/
 	
 	<flow name="retrieveFlgiths">
 		<http:listener config-ref="HTTP_Listener_Configuration" path="/flights" doc:name="HTTP" />
-        <logger message="my maven project start" level="INFO" doc:name="Logger"/>
+        <logger message="my maven project start 1 - 1" level="INFO" doc:name="Logger"/>
 		<db:select config-ref="Derby_Configuration" doc:name="Database">
 			<db:parameterized-query><![CDATA[SELECT * FROM FLIGHTS]]></db:parameterized-query>
 		</db:select>
